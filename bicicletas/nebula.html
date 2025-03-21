@@ -5,9 +5,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Nebula | Bikcraft</title>
+  <title>Trigonométrica | Raffael Aulas</title>
   <meta name="description" content="Nebula.">
-
+  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+  </script>
   <link rel="preload" href="../css/style.css" as="style">
   <link rel="stylesheet" href="../css/style.css">
 </head>
@@ -21,8 +22,8 @@
 
       <nav aria-label="primaria">
         <ul class="header-menu font-1-m cor-0">
-          <li><a href="../bicicletas.html">Bicicletas</a></li>
-          <li><a href="../seguros.html">Seguros</a></li>
+          <li><a href="../bicicletas.html">Integrais</a></li>
+          <li><a href="../seguros.html">Exercícios</a></li>
           <li><a href="../contato.html">Contato</a></li>
         </ul>
       </nav>
@@ -32,58 +33,55 @@
   <main class="titulo-bg">
     <div>
       <div class="titulo container">
-        <p class="font-2-xl cor-5">R$ 3999</p>
         <h1 class="font-1-xxl cor-0">Nebula Cosmic<span class="cor-p1">.</span></h1>
       </div>
     </div>
-    <div class="bicicleta container">
-      <div class="bicicleta-imagens">
-        <img src="../img/bicicleta/nimbus3.jpg" alt="">
-        <img src="../img/bicicleta/nimbus1.jpg" alt="">
-        <img src="../img/bicicleta/nimbus2.jpg" alt="">
-      </div>
-      <div class="bicicleta-conteudo">
-        <p class="font-2-l cor-5">A Nebula Cosmic é a melhor Bikcraft já criada pela nossa equipe. Ela vem equipada com os melhores acessórios, o que garante maior velocidade.</p>
-        <div class="bicicleta-comprar">
-          <a class="botao" href="../orcamento.html">Comprar Agora</a>
-          <span class="font-1-xs cor-6"><img src="../img/icones/entrega.svg" alt=""> entrega em 5 dias</span>
-          <span class="font-1-xs cor-6"><img src="../img/icones/estoque.svg" alt=""> 18 em estoque</span>
-        </div>
+    <div class="bicicleta container " style="background-color:white;">
 
-        <h2 class="font-1-xs cor-0">Informações</h2>
-        <ul class="bicicleta-informacoes">
-          <li>
-            <img src="../img/icones/eletrica.svg" alt="">
-            <h3 class="font-1-m cor-0">Motor Elétrico</h3>
-            <p class="font-2-xs cor-5">Permite você viajar distâncias inimaginaveis com a sua bike.</p>
-          </li>
-          <li>
-            <img src="../img/icones/velocidade.svg" alt="">
-            <h3 class="font-1-m cor-0">40 km/h</h3>
-            <p class="font-2-xs cor-5">A mais rápida bicicleta elétrica disponível hoje no mercado.</p>
-          </li>
-          <li>
-            <img src="../img/icones/rastreador.svg" alt="">
-            <h3 class="font-1-m cor-0">Rastreador</h3>
-            <p class="font-2-xs cor-5">Rastreador e sistema anti-furto para garantir o seu sossego.</p>
-          </li>
-          <li>
-            <img src="../img/icones/carbono.svg" alt="">
-            <h3 class="font-1-m cor-0">Fibra de Carbono</h3>
-            <p class="font-2-xs cor-5">Maior proteção possível para a sua Bikcraft com fibra de carbono.</p>
-          </li>
+      <div class="bicicleta-conteudo font-2-l ">
+        <p class="font-2-l">A substituição trigonométrica é uma técnica de integração muito utilizada quando ocorre integrandos algébricos. Ela se baseia no fato que identidades trigonométricas muitas vezes possibilitam a substituição de um função algébrica por uma função trigonométrica, que pode ser mais facilmente integrada.</p>
+        <h1>Substituições Trigonométricas para Integração</h1>
+        <p>No caso de integração por substituição trigonométrica, um integrante que contenha uma das formas:</p>
+
+        \[
+        \sqrt{a^2 - x^2} \quad \text{(I)}
+        \]
+
+        \[
+        \sqrt{a^2 + x^2} \quad \text{(II)}
+        \]
+
+        \[
+        \sqrt{x^2 - a^2} \quad \text{(III)}
+        \]
+
+        <p>sendo \( a \) uma constante positiva e não tendo nenhum outro fator irracional, pode ser transformado numa integral trigonométrica mais familiar, utilizando substituições trigonométricas ou com o emprego de uma nova variável.</p>
+
+        <p>Para os três casos acima, utilizamos as identidades trigonométricas:</p>
+
+        \[
+        1 - sen^2(\theta) = \cos^2(\theta) \quad \text{(1)}
+        \]
+
+        \[
+        1 + tg^2(\theta) = \sec^2(\theta) \quad \text{(2)}
+        \]
+
+        \[
+        \sec^2(\theta) - 1 = tg^2(\theta) \quad \text{(3)}
+        \]
+        <p>Veja a construção: <a style="color: red;" href="https://www.obaricentrodamente.com/2012/06/integracao-por-substituicao.html"><strong>AQUI</strong></a>.</p>
+        <p>Com base nos resultados obtidos, podemos montar uma tabela:</p>
+        <img src="/img/graficos/tabela.png">
+        <p>Vejam que, para representar graficamente as substituições sugeridas no triângulo retângulo, o radical ficará sempre no lado do triângulo que não é utilizado pela relação trigonométrica:</p>
+
+        <ul>
+          <li><strong>Caso I:</strong> Usa-se \( x = a sen(\theta) \); logo, o radical aparece no cateto adjacente a \( \theta \);</li>
+          <li><strong>Caso II:</strong> Usa-se \( a tg(\theta) \); logo, o radical aparece na hipotenusa;</li>
+          <li><strong>Caso III:</strong> Usa-se \( a \sec(\theta) \); logo, o radical aparece no cateto oposto a \( \theta \).</li>
         </ul>
-        <h2 class="font-1-xs cor-0">Ficha Técnica</h2>
-        <ul class="bicicleta-ficha font-2-s cor-4">
-          <li>Peso <span>9 kg</span></li>
-          <li>Altura <span>60 cm</span></li>
-          <li>Largura <span>120 cm</span></li>
-          <li>Profundidade <span>10 cm</span></li>
-          <li>Marchas <span>16</span></li>
-          <li>Roda <span>29</span></li>
-        </ul>
+
       </div>
-    </div>
   </main>
 
   <article class="bicicletas-lista container">
@@ -92,33 +90,19 @@
     <ul>
       <li>
         <a href="./magic.html">
-          <img src="../img/bicicletas/magic.jpg" alt="Bicicleta preta">
-          <h3 class="font-1-xl">Magic Might</h3>
-          <span class="font-2-m cor-8">R$ 2499</span>
+          <img src="../img/bicicletas/magic-home.png" alt="" width="100%">
+          <h3 class="font-1-xl">Substituição Simples</h3>
         </a>
       </li>
       <li>
         <a href="./nimbus.html">
-          <img src="../img/bicicletas/nimbus.jpg" alt="Bicicleta preta">
-          <h3 class="font-1-xl">Nimbus Stark</h3>
-          <span class="font-2-m cor-8">R$ 4999</span>
+          <img src="../img/bicicletas/nimbus-home.png" alt="" width="100%">
+          <h3 class="font-1-xl">Por Partes</h3>
         </a>
       </li>
     </ul>
   </article>
 
-  <article class="seguro-bg">
-    <div class="seguro container">
-      <div class="seguro-imagem">
-        <img src="../img/fotos/seguros.jpg" alt="Pessoa parada em cima de uma bicicleta.">
-      </div>
-      <div class="seguro-conteudo">
-        <h2 class="font-1-xxl cor-0">Pedale mais tranquilo com o nosso <span class="cor-p1">seguro.</span></h2>
-        <p class="font-2-l cor-5">Inscreva-se em um dos planos do nosso seguro Bikcraft e aproveite diversos benefícios.</p>
-        <a class="botao" href="../seguros.html">Conheça Mais</a>
-      </div>
-    </div>
-  </article>
 
   <footer class="footer-bg">
     <div class="footer container">
@@ -126,35 +110,27 @@
       <div class="footer-contato">
         <h3 class="font-2-l-b cor-0">Contato</h3>
         <ul class="font-2-m cor-5">
-          <li><a href="tel:+552199999999">+55 21 9999-9999</a></li>
-          <li><a href="mailto:contato@bikcraft.com">contato@bikcraft.com</a></li>
-          <li>Rua Ali Perto, 42 - Botafogo</li>
-          <li>Rio de Janeiro - RJ</li>
+          <li><a href="tel:+55 (83) 98674-0915">Fale comigo</a></li>
+          <li><a href="mailto:raffaelwagner@gmail.com">Enviar e-mail</a></li>
         </ul>
         <div class="footer-redes">
-          <a href="../">
+          <a href="https://www.instagram.com/raffael_wagner/">
             <img src="../img/redes/instagram.svg" alt="Instagram">
           </a>
-          <a href="../">
-            <img src="../img/redes/facebook.svg" alt="Facebook">
-          </a>
-          <a href="../">
-            <img src="../img/redes/youtube.svg" alt="Youtube">
-          </a>
+
         </div>
       </div>
       <div class="footer-informacoes">
         <h3 class="font-2-l-b cor-0">Informações</h3>
         <nav>
           <ul class="font-1-m cor-5">
-            <li><a href="../bicicletas.html">Bicicletas</a></li>
-            <li><a href="../seguros.html">Seguros</a></li>
+            <li><a href="../bicicletas.html">Integrais</a></li>
+            <li><a href="../seguros.html">Exercícios</a></li>
             <li><a href="../contato.html">Contato</a></li>
-            <li><a href="../termos.html">Termos e Condições</a></li>
           </ul>
         </nav>
       </div>
-      <p class="footer-copy font-2-m cor-6">Bikcraft © Alguns direitos reservados.</p>
+      <p class="footer-copy font-2-m cor-6">Raffael © Alguns direitos reservados.</p>
     </div>
   </footer>
 </body>

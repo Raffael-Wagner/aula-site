@@ -1,6 +1,6 @@
 .bicicleta {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flexbox;
+
   align-items: start;
   gap: 40px;
   padding-top: 60px;
@@ -12,18 +12,14 @@
 }
 
 .bicicleta-imagens {
-  display: flex;
-  flex-wrap: wrap;
   gap: 20px;
 }
 
 .bicicleta-imagens img {
-  flex: 1;
-  min-width: 200px;
+  width: 50%;
 }
 
 .bicicleta-imagens img:first-child {
-  min-width: 100%;
 }
 
 .bicicleta-conteudo > p {
